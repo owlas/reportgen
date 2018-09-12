@@ -1,0 +1,11 @@
+%{{ cell.text %}}
+%{ if cell.figure %}
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figures/%{{ cell.figure %}}}
+  %{ if cell.caption %}
+  \caption{%{{ cell.caption %}}}
+  %{ endif %}
+  \label{%{{ cell.figure %}}}
+\end{figure}
+%{ endif %}

@@ -1,0 +1,7 @@
+%{ extends "templates/base.tex" %}
+
+%{ block content %}
+%{ for cell in cells %}
+%{ include 'templates/cell.tex' %}
+%{ endfor %}
+%{ endblock content %}
